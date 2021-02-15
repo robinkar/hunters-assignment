@@ -27,6 +27,10 @@ export class Hero {
 	@Column()
 	backStory: string;
 
+	@Field()
+	@Column()
+	role: string;
+	
 	@Field((type) => [Skill])
 	@ManyToMany((type) => Skill, { lazy: true, cascade: ['insert'] })
 	@JoinTable()

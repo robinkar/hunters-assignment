@@ -41,6 +41,7 @@ const PORCU: DeepPartial<Hero> = {
 				'Porcu spins right arm really fast as a decoy, then quickly punches with his left straight to the opponents face.',
 		},
 	],
+	role: "REGULAR",
 };
 
 const LISA: DeepPartial<Hero> = {
@@ -85,6 +86,7 @@ const LISA: DeepPartial<Hero> = {
 			description: 'Shoots a quick shot, drawing her gun from a holster and putting it back.',
 		},
 	],
+	role: "TREASURER",
 };
 
 const GIDEON: DeepPartial<Hero> = {
@@ -124,6 +126,7 @@ const GIDEON: DeepPartial<Hero> = {
 			description: 'Shoots a psychic beam.',
 		},
 	],
+	role: "REGULAR",
 };
 
 export const seedDatabase = async () => {
