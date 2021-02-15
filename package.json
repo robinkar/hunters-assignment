@@ -11,7 +11,8 @@
 		"start:front": "yarn run start-dev",
 		"start:back": "ts-node src/server/index.ts",
 		"start-dev": "webpack serve --config config/webpack/dev.ts",
-		"test": "jest --watch --coverage --config=config/jest.json"
+		"test": "jest --watch --coverage --config=config/jest.json",
+		"example": "ts-node example.ts"
 	},
 	"keywords": [],
 	"author": "Axel Auvinen <axel.auvinen@hoxhunt.com>",
@@ -45,6 +46,7 @@
 		"awesome-typescript-loader": "5.2.1",
 		"babel-loader": "8.2.2",
 		"babel-plugin-styled-components": "1.12.0",
+		"cross-fetch": "^3.0.6",
 		"docz-theme-default": "1.2.0",
 		"express": "4.17.1",
 		"file-loader": "6.2.0",
