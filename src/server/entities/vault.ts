@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable, OneToOne } from 'typeorm';
-import { ObjectType, ID, Field } from 'type-graphql';
+import { ObjectType, ID, Field, Authorized } from 'type-graphql';
 
 @Entity()
 @ObjectType()
@@ -10,6 +10,7 @@ export class Vault {
 
 
   //☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*
+	@Authorized(["TREASURER"])
 	@Field()
 	@Column()
 	treasures: string;
